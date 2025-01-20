@@ -21,7 +21,7 @@ const Hero = () => {
                 </h2>
                 <p className='mb-4 p-2 text-md'>{HERO.description}</p>
                 <motion.a
-                    href='/Gandha-CV-2024.pdf'
+                    href='/my-cv.pdf'
                     target='_blank'
                     rel='noopener noreferrer'
                     whileHover={{ scale: 1.05 }}
