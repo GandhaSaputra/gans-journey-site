@@ -34,9 +34,9 @@ export const NAVIGATION_LINKS = [
 export const HERO = {
     greet: 'Hi! 👋🏻, my name is',
     name: `Gandha Saputra`,
-    role: `I'm a Software Developer`,
+    role: `I'm a Front-End Developer`,
     description:
-        'As a passionate JavaScript developer, I enjoy building dynamic and engaging applications using ReactJS and React Native. In my current role as a front-end developer, I focus on creating intuitive, visually appealing user interfaces that meet the highest standards of code quality. I take pride in thoroughly testing my work to deliver smooth, seamless experiences across both web and mobile platforms.',
+        'I’m a Frontend & React Native developer with 4+ years of experience building production-grade mobile and web applications. I focus on performance optimization, realtime systems, and modular architectures that scale across clients. I have hands-on experience integrating RESTful APIs, implementing robust state management (Redux / Zustand), and shipping apps via CI/CD to the App Store and Google Play.',
 };
 
 export const PROJECTS = [
@@ -139,47 +139,47 @@ export const PROJECTS = [
 ];
 
 export const BIO = [
-    `Hello! My name is Gandha and I am someone who thrives on exploring new things. My journey began with a fascination for crafting beautiful user interfaces using HTML, CSS, and JavaScript, which quickly grew into a deeper interest in building scalable, high-quality applications. Over time, I’ve expanded my skills into back-end development, allowing me to build more holistic solutions across both web and mobile platforms.`,
-    `Currently, I’m working as a React Native Developer at VirtualSpirit, where I focus on developing and maintaining core features for mobile applications. My work centers around creating seamless user experiences through real-time features and optimizing performance. In addition, I’ve contributed to several white-label projects by implementing a modular architecture approach to ensure flexibility and scalability.`,
-    `In my free time, I enjoy working on personal projects to enhance my skills, particularly in back-end development. One of my current focuses is deepening my knowledge of server-side technologies, databases, and building scalable APIs. I'm actively learning through hands-on projects, online courses, and tutorials, and I'm excited to incorporate my growing back-end expertise into future applications.`,
+    `I’m a Frontend and React Native engineer with 4+ years of experience delivering production-quality mobile and web applications. My work centers on building performant, maintainable systems: I design modular component libraries, optimize rendering and memory usage for mobile, and implement realtime features (chat, live updates) with resilient reconnection and offline strategies. I routinely integrate and harden RESTful APIs, collaborate with architects on efficient endpoints and caching strategies, and implement CI/CD pipelines for automatic builds and staged rollouts to App Store and Google Play.`,
+    `On the frontend I prioritize clean, testable code—component-driven development, typed code with TypeScript, and predictable state management using Redux or Zustand. On the backend side I’ve worked with Node.js/Express services and databases (Postgres / MongoDB), building and consuming APIs with attention to security, rate-limiting, and data integrity. I enjoy turning ambiguous product requirements into clear technical plans, partnering closely with product, design, and QA to ship end-to-end features that improve key user metrics.`,
+    `Outside of work I build side projects to deepen my backend and systems knowledge (scalable APIs, background processing, and observability), and I’m always refining performance profiles and monitoring to keep apps stable at scale.`,
 ];
 
 export const SKILLS = [
     {
         icon: <SiTypescript className='text-4xl text-cyan-600 lg:text-5xl' />,
         name: 'Typescript & Javascript',
-        experience: '3+ years',
+        experience: '4+ years',
     },
     {
         icon: <FaReact className='text-4xl text-cyan-400 lg:text-5xl' />,
         name: 'React & React Native',
-        experience: '3+ years',
+        experience: '4+ years',
     },
     {
         icon: <SiRedux className='text-4xl text-indigo-600 lg:text-5xl' />,
         name: 'Redux / React Context / Zustand',
-        experience: '3+ years',
+        experience: '4+ years',
     },
     {
         icon: <TbBrandNextjs className='text-4xl text-white lg:text-5xl' />,
         name: 'Next.js',
-        experience: '2+ years',
+        experience: '3+ years',
     },
     {
         icon: <FaNodeJs className='text-4xl text-green-600 lg:text-5xl' />,
         name: 'Node.js',
-        experience: '2+ years',
+        experience: '3+ years',
     },
     {
         icon: <SiMongodb className='text-4xl text-green-600 lg:text-5xl' />,
         name: 'MongoDB',
-        experience: '1+ years',
+        experience: '2+ years',
     },
     {
         icon: (
             <BiLogoPostgresql className='text-4xl text-sky-700 lg:text-5xl' />
         ),
-        name: 'PostgreSQL',
+        name: 'PostgreSQL & MySQL',
         experience: '1+ years',
     },
 ];

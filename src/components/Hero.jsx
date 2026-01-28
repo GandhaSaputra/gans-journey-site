@@ -21,7 +21,7 @@ const Hero = () => {
                 </h2>
                 <p className='mb-4 p-2 text-md'>{HERO.description}</p>
                 <motion.a
-                    href='/my-cv.pdf'
+                    href='/resume-gandha-saputra.pdf'
                     target='_blank'
                     rel='noopener noreferrer'
                     whileHover={{ scale: 1.05 }}
@@ -32,7 +32,7 @@ const Hero = () => {
                     hover:text-white hover:bg-clip-padding hover:border-transparent
                     transition-all duration-300 ease-in-out animate-bounce font-medium'
                 >
-                    Curriculum Vitae
+                    Resume
                 </motion.a>
             </motion.div>
             <motion.div
