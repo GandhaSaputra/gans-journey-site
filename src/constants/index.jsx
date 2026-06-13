@@ -362,11 +362,7 @@ export const EDUCATION = [
 ];
 
 export const CONTACT_DETAILS = {
-    phone: '+62 896-2662-4244',
-    phoneHref: 'tel:+6289626624244',
-    email: 'ganzs499@gmail.com',
     emailHref: 'mailto:ganzs499@gmail.com',
-    linkedin: 'linkedin.com/in/gandha-saputra',
     linkedinHref: 'https://www.linkedin.com/in/gandha-saputra/',
 };
 
