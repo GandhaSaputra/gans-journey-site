@@ -7,12 +7,16 @@ import {
     FaInstagram,
 } from 'react-icons/fa6';
 
-import projectImage1 from '../assets/vinita-banner.png';
+import projectImage1 from '../assets/new-vinita-banner.png';
 import projectImage2 from '../assets/sothai-banner.png';
 import projectImage3 from '../assets/sam-banner.png';
 import projectImage4 from '../assets/accelist-bootcamp-banner.png';
 import projectImage5 from '../assets/yoyokitchen-banner.png';
 import projectImage6 from '../assets/hospitalpreneur-banner.png';
+import jiffCustomerApp from '../assets/jiff-customer-banner.png';
+import jiffAgentApp from '../assets/jiff-agent-banner.png';
+import qitaBanner from '../assets/qita-banner.png';
+import republikeBanner from '../assets/republike-banner.png';
 
 import { SiTypescript } from 'react-icons/si';
 import { SiRedux } from 'react-icons/si';
@@ -20,11 +24,11 @@ import { FaNodeJs } from 'react-icons/fa';
 import { BiLogoPostgresql } from 'react-icons/bi';
 
 export const NAVIGATION_LINKS = [
-    { label: 'Bio', href: '#bio' },
+    // { label: 'Bio', href: '#bio' },
     { label: 'Work Experience', href: '#work' },
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
-    { label: 'Education', href: '#education' },
+    // { label: 'Education', href: '#education' },
     { label: 'Contact', href: '#contact' },
 ];
 
@@ -33,10 +37,29 @@ export const HERO = {
     name: `Gandha Saputra`,
     role: `Mobile And Web Developer`,
     description:
-        `Mobile and Web Developer with 4+ years of experience building and shipping mobile apps from scratch to production — across banking, healthcare, social media, and lifestyle platforms. Experienced in end-to-end delivery: architecture, API integration, state management, performance tuning, and App Store/Play Store releases. Currently building at scale inside BRI's flagship super app, Qitta.`,
+        `I help companies turn product ideas into stable, scalable, and production-ready mobile apps. Over the past 4+ years, I’ve built and shipped 10+ mobile and web applications using React Native, React, Next.js, JavaScript, and TypeScript — serving thousands of users across banking, healthcare, social media, lifestyle, and commerce products.`,
 };
 
 export const PROJECTS = [
+    {
+        id: 1,
+        name: 'Qita By BRI',
+        description:
+            'Qita By BRI is a mobile banking app that provides users with a seamless and secure way to manage their finances. With features like real-time account updates, transaction history, and easy fund transfers, Qita makes banking simple and convenient.',
+        image: qitaBanner,
+        projectLink: [
+            {
+                type: 'App Store',
+                link: 'https://apps.apple.com/id/app/qita-by-bri/id6747552980',
+            },
+            {
+                type: 'Play Store',
+                link: 'https://play.google.com/store/apps/details?id=id.co.bri.brimons',
+            },
+        ],
+        githubLink:
+            'https://apps.apple.com/us/app/vinita-south-asian-dating/id6464050904',
+    },
     {
         id: 1,
         name: 'Vinita Dating App',
@@ -56,9 +79,65 @@ export const PROJECTS = [
         githubLink:
             'https://apps.apple.com/us/app/vinita-south-asian-dating/id6464050904',
     },
-
     {
         id: 2,
+        name: 'JIFF : Express Shopping',
+        description:
+            'JIFF : Express Shopping is a mobile commerce app that helps users shop from trusted local merchants with instant pickup and fast delivery options. Users can browse products, complete secure payments, track deliveries in real time, and collect orders from nearby JIFF Agent Hubs.',
+        image: jiffCustomerApp,
+        projectLink: [
+            {
+                type: 'App Store',
+                link: 'https://apps.apple.com/us/app/jiff-express-shopping/id6749932038',
+            },
+            {
+                type: 'Play Store',
+                link: 'https://play.google.com/store/apps/details?id=com.jiffcustomer.app',
+            },
+        ],
+        githubLink:
+            'https://apps.apple.com/us/app/vinita-south-asian-dating/id6464050904',
+    },
+    {
+        id: 3,
+        name: 'JIFF Agent : Partners App',
+        description:
+            'JIFF Agent : Partners App is a mobile business platform that helps merchants, resellers, hub partners, and riders manage their activities within one ecosystem. The app includes partner dashboards, order and delivery management, earnings and wallet tracking, marketplace access, notifications, and multi-role earning opportunities through the Super Agent program.',
+        image: jiffAgentApp,
+        projectLink: [
+            {
+                type: 'App Store',
+                link: 'https://apps.apple.com/us/app/jiff-agent-partners-app/id6749932298',
+            },
+            {
+                type: 'Play Store',
+                link: 'https://play.google.com/store/apps/details?id=com.jiffagent.app',
+            },
+        ],
+        githubLink:
+            'https://apps.apple.com/us/app/vinita-south-asian-dating/id6464050904',
+    },
+    {
+        id: 4,
+        name: 'Republike',
+        description:
+            'Republike is a community-focused social networking app that allows users to create posts, comment, explore trending topics, and discover articles from around the web. The platform combines interactive discussion features with a subscription-based membership model, delivering a modern mobile experience designed for open conversation and meaningful community participation.',
+        image: republikeBanner,
+        projectLink: [
+            {
+                type: 'App Store',
+                link: 'https://apps.apple.com/us/app/republike/id6444228965',
+            },
+            {
+                type: 'Play Store',
+                link: 'https://play.google.com/store/apps/details?id=com.republike.app',
+            },
+        ],
+        githubLink:
+            'https://apps.apple.com/us/app/vinita-south-asian-dating/id6464050904',
+    },
+    {
+        id: 4,
         name: 'Sales activity management (SAM)',
         description:
             'SAM Mobile App streamlines sales activities for Astra Isuzu representatives, offering tools to manage processes, track performance, monitor targets, and more—all with a user-friendly interface for seamless use on the go.',
@@ -76,7 +155,7 @@ export const PROJECTS = [
         githubLink: 'https://github.com/user/task-management-tool',
     },
     {
-        id: 3,
+        id: 5,
         name: 'Accelist Education Indonesia',
         description:
             'Accelist Edukasi Indonesia is a web application bootcamp that empowers aspiring developers with skills in frontend, backend, and fullstack development, preparing them to excel in web and mobile development.',
@@ -90,7 +169,7 @@ export const PROJECTS = [
         githubLink: 'https://github.com/user/weather-app',
     },
     {
-        id: 4,
+        id: 6,
         name: 'So Thai Massage App',
         description:
             'So Thai App simplifies booking massage services online, connecting users with therapists in their area. Users can view availability, select preferred therapists, and make secure payments—all from the comfort of their homes.',
@@ -108,7 +187,7 @@ export const PROJECTS = [
         githubLink: 'https://github.com/user/ecommerce-platform',
     },
     {
-        id: 5,
+        id: 7,
         name: 'Yoyokitchen App',
         description:
             'Marketplace-based mobile application to make it easier for customers to order products or events provided by the company',
@@ -126,7 +205,7 @@ export const PROJECTS = [
         githubLink: 'https://github.com/user/blog-platform',
     },
     {
-        id: 6,
+        id: 8,
         name: 'Hospitalpreneur Club App',
         description:
             'A social media app for communities, offering consulting, coaching, and business support to help hospitals and clinics overcome challenges and grow.',
@@ -138,7 +217,7 @@ export const PROJECTS = [
 export const BIO = [
     `I build production web and mobile applications with React, React Native, Next.js, JavaScript, and TypeScript. Across more than four years in frontend and mobile development, I have worked on banking, social media, healthcare, transportation, ordering, tracking, smart locker, sales management, and payment experiences.`,
     `My work includes RESTful API integration, predictable state management with Redux and Zustand, performance optimization, debugging, testing, and App Store and Google Play releases. I care about clean code, modular architecture, secure data handling, and codebases that remain readable and scalable as products grow.`,
-    `I work closely with product managers, backend developers, QA engineers, and UI/UX designers to turn requirements into stable end-to-end features. I currently contribute to Qitta, BRI's banking super app and rebranded version of BRImo, as a Mobile Developer at PT Bank Rakyat Indonesia Tbk.`,
+    `I work closely with product managers, backend developers, QA engineers, and UI/UX designers to turn requirements into stable end-to-end features. I currently contribute to Qita, BRI's banking super app and rebranded version of BRImo, as a Mobile Developer at PT Bank Rakyat Indonesia Tbk.`,
 ];
 
 export const SKILLS = [
@@ -180,10 +259,14 @@ export const EXPERIENCES = [
         company: 'PT Bank Rakyat Indonesia Tbk',
         duration: 'February 2026 - Present',
         highlights: [
-            'Contribute to Qitta, a banking super app and rebranded version of BRImo, using React Native.',
+            'Contribute to Qita, a banking super app and rebranded version of BRImo, using React Native.',
             'Collaborate with QA engineers, backend developers, project managers, and UI/UX designers to deliver user-focused features.',
             'Refactor existing code toward a clean, maintainable, and scalable architecture.',
             'Perform testing, debugging, and performance optimization to improve stability, responsiveness, and reliability.',
+        ],
+        impact: [
+            `Contributed to the development and on-time soft launch of Qita — BRI's banking super app, now live on App Store and Google Play.`,
+            `Helped maintain codebase quality and stability ahead of public release through active refactoring and performance optimization.`,
         ],
     },
     {

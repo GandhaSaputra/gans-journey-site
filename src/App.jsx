@@ -1,4 +1,4 @@
-import Bio from './components/Bio';
+// import Bio from './components/Bio';
 import ContactForm from './components/ContactForm';
 import Education from './components/Education';
 import Footer from './components/Footer';
@@ -15,11 +15,11 @@ const App = () => {
             <div className='relative z-10 flex flex-col items-center p-4 space-y-8 container mx-auto'>
                 <Navbar />
                 <Hero />
-                <Bio />
+                {/* <Bio /> */}
                 <WorkExperience />
                 <Skills />
                 <Projects />
-                <Education />
+                {/* <Education /> */}
                 <ContactForm />
                 <Footer />
             </div>

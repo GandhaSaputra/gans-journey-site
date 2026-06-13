@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const WorkExperience = () => {
     return (
-        <section className='pt-24' id='work'>
+        <section className='pt-12' id='work'>
             <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}

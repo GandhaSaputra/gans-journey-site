@@ -37,7 +37,7 @@ const Projects = () => {
                             whileHover={{ scale: 1.1 }}
                             src={project.image}
                             alt={project.name}
-                            className='h-full w-full object-cover transition duration-500 group-hover:scale-110'
+                            className='h-full w-full object-contain transition duration-500 group-hover:scale-110'
                         />
                         <motion.div
                             initial={{ opacity: 0 }}
