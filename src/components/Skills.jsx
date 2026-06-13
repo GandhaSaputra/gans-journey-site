@@ -34,7 +34,7 @@ const Skills = () => {
     return (
         <div className='container mx-auto' id='skills'>
             <h2 className='mb-12 mt-20 text-center text-4xl font-semibold'>
-                Skills
+                Skills & Tech Stack
             </h2>
             <motion.div
                 initial='hidden'
@@ -47,7 +47,7 @@ const Skills = () => {
                     <motion.div
                         variants={itemVartiants}
                         key={index}
-                        className={`py-6 flex items-center justify-between ${
+                        className={`py-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between ${
                             index !== SKILLS.length - 1
                                 ? 'border-b border-stone-50/30'
                                 : ''
@@ -59,8 +59,8 @@ const Skills = () => {
                                 {skill.name}
                             </h3>
                         </div>
-                        <div className='text-md font-semibold lg:text-xl'>
-                            <span>{skill.experience}</span>
+                        <div className='text-sm text-stone-300 sm:max-w-xl sm:text-right lg:text-base'>
+                            <span>{skill.details}</span>
                         </div>
                     </motion.div>
                 ))}

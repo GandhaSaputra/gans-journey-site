@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 const Education = () => {
     return (
-        <section className='py-8' id='education'>
+        <section className='w-full py-20' id='education'>
             <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                className='mb-4 text-center text-3xl font-bold'
+                className='mb-12 text-center text-4xl font-semibold tracking-tighter'
             >
                 Education
             </motion.h2>
@@ -18,7 +18,7 @@ const Education = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: index * 0.5 }}
                     key={index}
-                    className='mb-6 p-10'
+                    className='mx-4 mb-6 rounded-xl border border-stone-50/30 bg-white/10 p-6 md:mx-10'
                 >
                     <h3 className='text-xl font-semibold'>
                         {education.degree}
