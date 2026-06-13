@@ -33,9 +33,23 @@ const WorkExperience = () => {
                         <p className='text-sm text-stone-300'>
                             {experience.duration}
                         </p>
-                        <p className='mt-2 text-sm md:text-base'>
-                            {experience.description}
-                        </p>
+                        <ul className='mt-4 list-disc space-y-2 pl-5 text-sm md:text-base'>
+                            {experience.highlights.map((highlight) => (
+                                <li key={highlight}>{highlight}</li>
+                            ))}
+                        </ul>
+                        {experience.impact && (
+                            <div className='mt-5 rounded-lg bg-black/20 p-4'>
+                                <p className='mb-2 text-sm font-semibold uppercase tracking-wider text-cyan-300'>
+                                    Impact
+                                </p>
+                                <ul className='list-disc space-y-2 pl-5 text-sm md:text-base'>
+                                    {experience.impact.map((item) => (
+                                        <li key={item}>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
                     </motion.div>
                 ))}
             </motion.div>

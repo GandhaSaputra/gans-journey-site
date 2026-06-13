@@ -1,6 +1,6 @@
 import Bio from './components/Bio';
 import ContactForm from './components/ContactForm';
-// import Education from './components/Education';
+import Education from './components/Education';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
@@ -19,7 +19,7 @@ const App = () => {
                 <WorkExperience />
                 <Skills />
                 <Projects />
-                {/* <Education /> */}
+                <Education />
                 <ContactForm />
                 <Footer />
             </div>

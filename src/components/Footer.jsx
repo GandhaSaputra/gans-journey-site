@@ -31,7 +31,7 @@ const Footer = () => {
                 ))}
             </div>
             <p className='mt-8 text-center text-sm tracking-wide text-gray-400'>
-                &copy;2025 - GansJourney.com
+                &copy;2026 - GansJourney
             </p>
         </div>
     );

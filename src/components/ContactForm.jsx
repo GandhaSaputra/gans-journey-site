@@ -3,6 +3,7 @@ import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { FiSend } from 'react-icons/fi';
 import { motion } from 'framer-motion';
+import { CONTACT_DETAILS } from '../constants';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -79,6 +80,22 @@ const ContactForm = () => {
             <h2 className='my-8 text-center text-4xl font-semibold tracking-tighter'>
                 Let&apos;s Connect
             </h2>
+            <div className='mb-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-stone-300 md:text-base'>
+                <a className='hover:text-cyan-300' href={CONTACT_DETAILS.phoneHref}>
+                    {CONTACT_DETAILS.phone}
+                </a>
+                <a className='hover:text-cyan-300' href={CONTACT_DETAILS.emailHref}>
+                    {CONTACT_DETAILS.email}
+                </a>
+                <a
+                    className='hover:text-cyan-300'
+                    href={CONTACT_DETAILS.linkedinHref}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    {CONTACT_DETAILS.linkedin}
+                </a>
+            </div>
             <motion.form
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

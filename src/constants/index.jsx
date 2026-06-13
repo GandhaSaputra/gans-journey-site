@@ -14,9 +14,6 @@ import projectImage4 from '../assets/accelist-bootcamp-banner.png';
 import projectImage5 from '../assets/yoyokitchen-banner.png';
 import projectImage6 from '../assets/hospitalpreneur-banner.png';
 
-import { FaReact } from 'react-icons/fa';
-import { TbBrandNextjs } from 'react-icons/tb';
-import { SiMongodb } from 'react-icons/si';
 import { SiTypescript } from 'react-icons/si';
 import { SiRedux } from 'react-icons/si';
 import { FaNodeJs } from 'react-icons/fa';
@@ -27,16 +24,16 @@ export const NAVIGATION_LINKS = [
     { label: 'Work Experience', href: '#work' },
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
-    // { label: 'Education', href: '#education' },
+    { label: 'Education', href: '#education' },
     { label: 'Contact', href: '#contact' },
 ];
 
 export const HERO = {
-    greet: 'Hi! 👋🏻, my name is',
+    greet: 'Hi, my name is',
     name: `Gandha Saputra`,
-    role: `I'm a Front-End Developer`,
+    role: `Mobile And Web Developer`,
     description:
-        'I’m a Frontend & React Native developer with 4+ years of experience building production-grade mobile and web applications. I focus on performance optimization, realtime systems, and modular architectures that scale across clients. I have hands-on experience integrating RESTful APIs, implementing robust state management (Redux / Zustand), and shipping apps via CI/CD to the App Store and Google Play.',
+        `Mobile and Web Developer with 4+ years of experience building and shipping mobile apps from scratch to production — across banking, healthcare, social media, and lifestyle platforms. Experienced in end-to-end delivery: architecture, API integration, state management, performance tuning, and App Store/Play Store releases. Currently building at scale inside BRI's flagship super app, Qitta.`,
 };
 
 export const PROJECTS = [
@@ -139,98 +136,156 @@ export const PROJECTS = [
 ];
 
 export const BIO = [
-    `I’m a Frontend and React Native engineer with 4+ years of experience delivering production-quality mobile and web applications. My work centers on building performant, maintainable systems: I design modular component libraries, optimize rendering and memory usage for mobile, and implement realtime features (chat, live updates) with resilient reconnection and offline strategies. I routinely integrate and harden RESTful APIs, collaborate with architects on efficient endpoints and caching strategies, and implement CI/CD pipelines for automatic builds and staged rollouts to App Store and Google Play.`,
-    `On the frontend I prioritize clean, testable code—component-driven development, typed code with TypeScript, and predictable state management using Redux or Zustand. On the backend side I’ve worked with Node.js/Express services and databases (Postgres / MongoDB), building and consuming APIs with attention to security, rate-limiting, and data integrity. I enjoy turning ambiguous product requirements into clear technical plans, partnering closely with product, design, and QA to ship end-to-end features that improve key user metrics.`,
-    `Outside of work I build side projects to deepen my backend and systems knowledge (scalable APIs, background processing, and observability), and I’m always refining performance profiles and monitoring to keep apps stable at scale.`,
+    `I build production web and mobile applications with React, React Native, Next.js, JavaScript, and TypeScript. Across more than four years in frontend and mobile development, I have worked on banking, social media, healthcare, transportation, ordering, tracking, smart locker, sales management, and payment experiences.`,
+    `My work includes RESTful API integration, predictable state management with Redux and Zustand, performance optimization, debugging, testing, and App Store and Google Play releases. I care about clean code, modular architecture, secure data handling, and codebases that remain readable and scalable as products grow.`,
+    `I work closely with product managers, backend developers, QA engineers, and UI/UX designers to turn requirements into stable end-to-end features. I currently contribute to Qitta, BRI's banking super app and rebranded version of BRImo, as a Mobile Developer at PT Bank Rakyat Indonesia Tbk.`,
 ];
 
 export const SKILLS = [
     {
         icon: <SiTypescript className='text-4xl text-cyan-600 lg:text-5xl' />,
-        name: 'Typescript & Javascript',
-        experience: '4+ years',
-    },
-    {
-        icon: <FaReact className='text-4xl text-cyan-400 lg:text-5xl' />,
-        name: 'React & React Native',
-        experience: '4+ years',
+        name: 'Frontend & Mobile',
+        details:
+            'JavaScript, TypeScript, HTML & CSS, React, React Native, Next.js, Expo',
     },
     {
         icon: <SiRedux className='text-4xl text-indigo-600 lg:text-5xl' />,
-        name: 'Redux / React Context / Zustand',
-        experience: '4+ years',
-    },
-    {
-        icon: <TbBrandNextjs className='text-4xl text-white lg:text-5xl' />,
-        name: 'Next.js',
-        experience: '3+ years',
+        name: 'State & Data',
+        details: 'Redux, Zustand, React Query, Zod',
     },
     {
         icon: <FaNodeJs className='text-4xl text-green-600 lg:text-5xl' />,
-        name: 'Node.js',
-        experience: '3+ years',
-    },
-    {
-        icon: <SiMongodb className='text-4xl text-green-600 lg:text-5xl' />,
-        name: 'MongoDB',
-        experience: '2+ years',
+        name: 'Backend & APIs',
+        details:
+            'Node.js, Express.js, RESTful APIs, JWT, OAuth, WebSocket, Firebase',
     },
     {
         icon: (
             <BiLogoPostgresql className='text-4xl text-sky-700 lg:text-5xl' />
         ),
-        name: 'PostgreSQL & MySQL',
-        experience: '1+ years',
+        name: 'Databases',
+        details: 'MySQL, PostgreSQL, MongoDB',
+    },
+    {
+        icon: <FaGithub className='text-4xl text-white lg:text-5xl' />,
+        name: 'Tooling & Delivery',
+        details:
+            'Git, GitHub, App Store releases, Google Play releases, staged rollouts',
     },
 ];
 
 export const EXPERIENCES = [
     {
+        title: 'Mobile Developer',
+        company: 'PT Bank Rakyat Indonesia Tbk',
+        duration: 'February 2026 - Present',
+        highlights: [
+            'Contribute to Qitta, a banking super app and rebranded version of BRImo, using React Native.',
+            'Collaborate with QA engineers, backend developers, project managers, and UI/UX designers to deliver user-focused features.',
+            'Refactor existing code toward a clean, maintainable, and scalable architecture.',
+            'Perform testing, debugging, and performance optimization to improve stability, responsiveness, and reliability.',
+        ],
+    },
+    {
         title: 'React Native Developer',
-        company: 'VirtualSpirit',
-        duration: 'September 2023 - Present (Remote) // Kuala Lumpur, MY',
-        description:
-            'At VirtualSpirit, I am responsible for developing core features of the Vinita dating app, including seamless swiping functionality, real-time chat, and advanced filtering options. My work has enhanced the user experience and engagement through performance optimization. I also collaborated on a white-label mobile app project, implementing a modular architecture for easy customization across different clients, ensuring scalability and efficient maintenance.',
+        company: 'Virtual Spirit Technology Sdn Bhd',
+        duration: 'September 2023 - January 2026',
+        highlights: [
+            'Developed and maintained a large-scale React Native application used by thousands of active users, with a focus on performance, stability, and secure data handling.',
+            'Integrated RESTful APIs and optimized state management to improve data flow and reduce UI rendering issues across multiple modules.',
+            'Partnered with product managers and backend engineers to break down complex requirements and deliver business-critical features.',
+            'Supported App Store and Google Play releases, including build preparation, release notes, and staged rollouts.',
+        ],
+        impact: [
+            'Helped maintain a 4.5 App Store rating across more than 3,000+ user reviews.',
+            'Helped deliver two production applications for admins and customers covering ordering, transportation, real-time tracking, and smart locker services.',
+        ],
+    },
+    {
+        title: 'Mobile Developer',
+        company: 'PT Habilis Solutions Indonesia',
+        duration: 'November 2024 - April 2025 | Freelance',
+        highlights: [
+            'Developed and maintained a subscription-based social media application with React Native and Expo.',
+            'Implemented authentication, subscription payments, user feeds, and post creation workflows.',
+            'Applied clean code and modular architecture practices to support scalability and maintainability.',
+            'Collaborated with backend, QA, and UI/UX teams while handling debugging, testing, and performance optimization.',
+        ],
+        impact: [
+            'Delivered the application on schedule against the agreed functional requirements.',
+            'Contributed to a stable codebase designed to reduce technical debt and support long-term maintenance.',
+        ],
     },
     {
         title: 'Front-end Developer',
         company: 'Accelist Lentera Indonesia',
-        duration: 'January 2023 - September 2023 (Remote) // Jakarta, ID',
-        description:
-            'Collaborated with a cross-functional team, including Software Architect, Lead Engineer, QA, Backend, and UI/UX, to deliver high-performance Android and iOS mobile applications for Astra Isuzu, aimed at streamlining sales activity management. Additionally, I contributed to the development of a web application for participant registration in bootcamps, focusing on usability and responsive design.',
+        duration: 'January 2023 - September 2023',
+        highlights: [
+            'Worked with software architects, lead engineers, QA, backend, and UI/UX teams to develop Android and iOS applications for sales activity management.',
+            'Built and maintained a responsive web application for participant registration in company-hosted bootcamps.',
+            'Implemented structured data handling and input validation across multiple application flows.',
+        ],
+        impact: [
+            'Delivered interactive sales charts, structured reporting sheets, and optimized large-data rendering for production use.',
+            'Simplified registration flows with clear validation, error handling, and responsive behavior across devices.',
+        ],
     },
     {
         title: 'React Native Developer',
         company: 'Sirkel ID',
-        duration: 'July 2022 - September 2022 (Remote) // Bandung, ID',
-        description:
-            'Assisted in the development of a social media platform tailored for healthcare communities and hospitals, incorporating essential features like a content feed, consulting, and coaching. This project aimed to improve communication and collaboration within the healthcare ecosystem by providing a reliable and engaging platform for professionals and patients.',
+        duration: 'July 2022 - September 2022 | Freelance',
+        highlights: [
+            'Helped develop a healthcare-focused social media application for hospitals and healthcare communities.',
+            'Implemented content feeds, consulting, and coaching modules with smooth navigation and interaction.',
+            'Worked with the team to improve communication and collaboration features across the healthcare ecosystem.',
+        ],
+        impact: [
+            'Contributed to the delivery of a platform supporting structured collaboration among medical professionals and communities.',
+        ],
     },
     {
         title: 'Front-end Developer',
         company: 'Gobuddy Asia',
-        duration: 'November 2021 - December 2022 (Remote) // Hong Kong',
-        description:
-            'Worked in a dynamic team of app developers, UI/UX designers, backend engineers, and product strategists to develop mobile and web applications, contributing to business growth for clients. Delivered custom features for clients like Yoyokitchen and Sothai, aligning with their unique requirements and enhancing their user engagement.',
+        duration: 'November 2021 - December 2022',
+        highlights: [
+            'Built and maintained cross-platform iOS and Android applications with React Native.',
+            'Integrated RESTful APIs, third-party services, and Stripe payment flows.',
+            'Collaborated with design and product teams to deliver intuitive features under tight timelines.',
+            'Applied clean architecture and maintainable coding practices across client applications.',
+        ],
+        impact: [
+            'Shipped three production mobile applications within one year.',
+            'Improved application stability through reliable API integration patterns and clean code.',
+            'Enabled secure, well-tested payment experiences for end users.',
+        ],
     },
 ];
 
 export const EDUCATION = [
     {
-        degree: 'Master of Science in Computer Science',
-        institution: 'Stanford University',
-        duration: 'September 2012 - June 2014',
+        degree: 'Bachelor of Management',
+        institution: 'Tanjungpura University',
+        duration: '2017 - 2021',
         description:
-            'Specialized in Human-Computer Interaction and Software Engineering. Completed a thesis on enhancing user experience in web applications through advanced interactive techniques. Participated in various projects involving frontend development, algorithms, and data structures. Graduated with honors.',
+            'Built communication, teamwork, and problem-solving skills through academic projects and student organizations. Volunteered for two months in a Tax Volunteer Program, assisting employees with personal tax reporting.',
     },
     {
-        degree: 'Bachelor of Science in Information Technology',
-        institution: 'University of California, Berkeley',
-        duration: 'September 2008 - June 2012',
+        degree: 'Fullstack JavaScript Bootcamp',
+        institution: 'DumbWays ID',
+        duration: 'September 2021 - November 2021',
         description:
-            'Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and PHP. Completed a senior project on developing an e-commerce platform. Graduated with a high GPA.',
+            'Completed an intensive fullstack program covering React, React Native, Node.js, Express.js, databases, REST APIs, and frontend-backend integration. Built a database-backed online book ordering PWA and mobile projects including a calculator and to-do application.',
     },
 ];
+
+export const CONTACT_DETAILS = {
+    phone: '+62 896-2662-4244',
+    phoneHref: 'tel:+6289626624244',
+    email: 'ganzs499@gmail.com',
+    emailHref: 'mailto:ganzs499@gmail.com',
+    linkedin: 'linkedin.com/in/gandha-saputra',
+    linkedinHref: 'https://www.linkedin.com/in/gandha-saputra/',
+};
 
 export const SOCIAL_MEDIA_LINKS = [
     // {
